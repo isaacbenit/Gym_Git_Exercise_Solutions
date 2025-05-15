@@ -117,4 +117,270 @@ Fast-forward
  README.md | 1 +
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises>
+
+
+```
+second exercise
+
+```
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+No local changes to save
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+No local changes to save
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        home.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+stash@{0}: WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+stash@{0}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{1}: WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+stash@{0}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{1}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{2}: WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped refs/stash@{0} (90c00e7d0410d3a2e5982921dfe7c1f2cd95a749)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+stash@{0}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{1}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{2}: WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{0}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{0}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{1}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash lis
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'lis'
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+stash@{0}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{1}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{2}: WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{0}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash clear        
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git app .
+git: 'app' is not a git command. See 'git --help'.
+
+The most similar command is
+        apply
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+No local changes to save
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+stash@{0}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{1}: WIP on dev: 7a6d17e the changes made to create a pr
+stash@{2}: WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped refs/stash@{0} (b56652a001d5656ccbb519cdd9b4d31739ac8557)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash
+Saved working directory and index state WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{0}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash apply stash@{0}
+error: unknown switch `e'
+usage: git stash apply [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
 PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> 
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> 
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{1} 
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{1}               
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop stash@{2}
+error: unknown switch `e'
+usage: git stash pop [--index] [-q | --quiet] [<stash>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --[no-]index          attempt to recreate the index
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop "stash@{2}" 
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   home.html
+
+Dropped stash@{2} (f9e1ca698a26fbbbb149ed973c7f4e42d3c77337)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop "stash@{1}"
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+Dropped stash@{1} (86a85a605bf6d3bceea5e35d3da89a9a921ca61f)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git commit -m 'the second exercises'
+[dev a0bd493] the second exercises
+ 2 files changed, 22 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 522 bytes | 104.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+To https://github.com/isaacbenit/git-exercises.git
+   7a6d17e..a0bd493  dev -> dev
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+stash@{0}: WIP on dev: 7a6d17e the changes made to create a pr
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash pop "stash@{0}"
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped stash@{0} (13918648162830666367d016d43a6a87dcf0bdae)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git reset
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git stash list
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git status    
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git reset
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git reset 
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git reset 
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises>
+
+```
