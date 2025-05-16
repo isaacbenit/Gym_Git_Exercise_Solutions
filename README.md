@@ -384,3 +384,57 @@ nothing added to commit but untracked files present (use "git add" to track)
 PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises>
 
 ```
+bundle 2 exercise 1
+```
+Warning: PowerShell detected that you might be using a screen reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it, run 'Import-Module PSReadLine'.
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git branch
+* dev
+  main
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git branch ft/bundle-2
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git branch
+* dev
+  ft/bundle-2
+  main
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git switch ft/bundle-2
+Switched to branch 'ft/bundle-2'
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git add .
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git commit -m 'first changes on new repo'
+[ft/bundle-2 34ded5a] first changes on new repo
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises> git push --set-upstream origin ft/bundle-2 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 452 bytes | 150.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/Gym_Git_Exercise_Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/isaacbenit/git-exercises.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises>
+
+```
+bundle 2 exercise 2
+```
