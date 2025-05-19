@@ -438,3 +438,169 @@ PS C:\Users\HP-\codes\javascript-practice-exercises\git exercises>
 ```
 bundle 2 exercise 2
 ```
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 2.46 KiB | 96.00 KiB/s, done.
+From https://github.com/isaacbenit/git-exercises
+   6acab32..d99463e  main       -> origin/main
+Updating 6acab32..d99463e
+Fast-forward
+ README.md     | 54 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ about.html    | 11 +++++++++++
+ home.html     | 12 ++++++++++++
+ index.html    |  1 +
+ services.html | 11 +++++++++++
+ team.html     | 11 +++++++++++
+ 6 files changed, 100 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 home.html
+ create mode 100644 services.html
+ create mode 100644 team.html
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git branch ft/service-redesign
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/service-redesign
+* main
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git switch ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/service-redesign)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/service-redesign)
+$ git commit -m 'this are new changes'
+[ft/service-redesign 3ff1508] this are new changes
+ 1 file changed, 1 insertion(+)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 375 bytes | 187.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/Gym_Git_Exercise_Solutions/pull/new/ft/service-redesign
+remote:
+To https://github.com/isaacbenit/git-exercises.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/service-redesign)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git commit -m 'changes made on main'
+[main dc6e334] changes made on main
+ 1 file changed, 1 insertion(+)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 89.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+To https://github.com/isaacbenit/git-exercises.git
+   d99463e..dc6e334  main -> main
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git checkout ft/service-redesig
+error: pathspec 'ft/service-redesig' did not match any file(s) known to git
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/service-redesign
+* main
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/service-redesign)
+$ git diff
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/service-redesign)
+$ git diff main..ft/service-redesign
+diff --git a/services.html b/services.html
+index be83262..23754ec 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h1>services</h1>
+-    <p>This are the changes made on main</p>
++    <p>this is a new paragraph to compare the changes</p>
+ </body>
+ </html>
+\ No newline at end of file
+...skipping...
+diff --git a/services.html b/services.html
+index be83262..23754ec 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h1>services</h1>
+-    <p>This are the changes made on main</p>
++    <p>this is a new paragraph to compare the changes</p>
+ </body>
+ </html>
+\ No newline at end of file
+...skipping...
+diff --git a/services.html b/services.html
+index be83262..23754ec 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h1>services</h1>
+-    <p>This are the changes made on main</p>
++    <p>this is a new paragraph to compare the changes</p>
+ </body>
+ </html>
+\ No newline at end of file
+(END)
+
