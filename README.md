@@ -1254,3 +1254,286 @@ hint: Waiting for your editor to close the file...
 Bundle 3 exercise 2
 ```
 
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git c branch ft/faq-page
+git: 'c' is not a git command. See 'git --help'.
+
+The most similar commands are
+        clone
+        commit
+        gc
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git branch ft/faq-page
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Your branch is up to date with 'origin/ft/contact-page'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git commit -m 'the changes on faq page'
+[ft/contact-page e0e4957] the changes on faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git push 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 447 bytes | 111.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+To https://github.com/isaacbenit/git-exercises.git
+   5fdfb67..e0e4957  ft/contact-page -> ft/contact-page
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git log
+commit e0e4957b903b3a253a7509fc32c59714167f97c7 (HEAD -> ft/contact-page, origin/ft/contact-page)
+Author: isaac benit <isaac.irakoze24snhu@keplercollege.ac.rw>
+Date:   Wed May 21 10:45:07 2025 +0200
+
+    the changes on faq page
+
+commit 5fdfb673b33bae51c6668d8d531ffea7b182c1dc (ft/faq-page)
+Author: isaac benit <isaac.irakoze24snhu@keplercollege.ac.rw>
+Date:   Wed May 21 10:24:47 2025 +0200
+
+    the changes on teams pag
+
+commit fdc2e2a851058b9a2da87730247e548e81c8b3db
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/contact-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git cherry-pick ^C
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git cherry-pick e0e4957b903b3a253a7509fc32c59714167f97c7
+[ft/faq-page 1ed564c] the changes on faq page
+ Date: Wed May 21 10:45:07 2025 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 451 bytes | 75.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/Gym_Git_Exercise_Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/isaacbenit/git-exercises.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/team-page)
+$ git log
+commit 9dfd72e72278d41d724a8ca6fc66157d6e118e61 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: isaac benit <isaac.irakoze24snhu@keplercollege.ac.rw>
+Date:   Wed May 21 09:47:07 2025 +0200
+
+    new changes
+
+commit 67febde4b9bc4413b628c63318efa7814418f02a (origin/main, main)
+Merge: cf81bdc 5a64f07
+Author: isaac benit <isaac.irakoze24snhu@keplercollege.ac.rw>
+Date:   Wed May 21 09:21:44 2025 +0200
+
+    qMerge branch 'main' of https://github.com/isaacbenit/git-exercises
+
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/team-page)
+$ git revert 9dfd72e72278d41d724a8ca6fc66157d6e118e61
+hint: Waiting for your editor to close the file... 
+[ft/team-page 850817e] Revert "new changes"
+ 1 file changed, 1 deletion(-)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/team-page)
+$
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/team-page)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+* ft/faq-page
+  ft/home-page-redesign
+  ft/service-redesign
+  ft/team-page
+  main
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/faq-page)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git commit -m 'new changes on main branch;
+> git commit -m 'new changes on main branch'
+> git commit -m 'new changes on main branch;
+git commit -m 'new changes on main branch'^C
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git commit -m 'new changes on main branch'
+[main 09e44ff] new changes on main branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git push 
+To https://github.com/isaacbenit/git-exercises.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/isaacbenit/git-exercises.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git push 
+To https://github.com/isaacbenit/git-exercises.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/isaacbenit/git-exercises.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 4.54 KiB | 74.00 KiB/s, done.
+From https://github.com/isaacbenit/git-exercises
+   67febde..511b3b3  main       -> origin/main
+hint: Waiting for your editor to close the file... 
+Merge made by the 'ort' strategy.
+ README.md | 650 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 650 insertions(+)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 610 bytes | 203.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+To https://github.com/isaacbenit/git-exercises.git
+   511b3b3..a004b64  main -> main
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git chekout ft/home-page-redesign
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git switch  ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/home-page-redesign)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/home-page-redesign)
+$ git commit -m ' new changes on the main'
+[ft/home-page-redesign 34b7c51]  new changes on the main
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/home-page-redesign)
+$ git push 
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/home-page-redesign)
+$ git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.30 KiB | 189.00 KiB/s, done.
+Total 12 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/Gym_Git_Exercise_Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/isaacbenit/git-exercises.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
