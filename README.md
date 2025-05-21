@@ -1537,3 +1537,36 @@ remote:
 To https://github.com/isaacbenit/git-exercises.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+```
+Bundle 4 exercise 1
+```
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git remote add git-copy https://github.com/isaacbenit/git-copy.git
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git commit -m 'new changes for bundle 4'
+[main 4439512] new changes for bundle 4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git push git-copy
+Enumerating objects: 84, done.
+Counting objects: 100% (84/84), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (79/79), done.
+Writing objects: 100% (84/84), 131.06 KiB | 1.38 MiB/s, done.
+Total 84 (delta 31), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (31/31), done.
+To https://github.com/isaacbenit/git-copy.git
+ * [new branch]      main -> main
+
+HP-@isaacb24 MINGW64 
+
+```
+Bundle 4 exercise 2
+```
+
