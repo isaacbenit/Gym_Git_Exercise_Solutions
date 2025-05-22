@@ -1683,6 +1683,76 @@ branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 
 HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/squashing)
 $
-```
+
 Bundle 5 exercise 1
 ```
+the changes for this exercise were not in the terminal
+```
+Bundle 5 exercise 2
+```
+HP-@isaacb24 MINGW64 ~/codes/git forks (main)
+$ cd 'c:/Users/HP-/codes/git forks/git-cafe-exercise'
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (main)
+$ git add .
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (main)
+$ git commit -m ' new changes of the fork'
+[main 9dcc97e]  new changes of the fork
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 339 bytes | 169.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/isaacbenit/git-cafe-exercise.git
+   d1d3f9c..9dcc97e  main -> main
+```
+Bundle 6 exercise 1
+```
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (main)
+$ git branch ft/new-changes
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (main)
+$ git switch ft/new-changes
+Switched to branch 'ft/new-changes'
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (ft/new-changes)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (ft/new-changes)
+$ git commit -m 'new changes on the menu page'
+[ft/new-changes be5c939] new changes on the menu page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (ft/new-changes)
+$ git push 
+fatal: The current branch ft/new-changes has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/new-changes
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (ft/new-changes)
+$ git push --set-upstream origin ft/new-changes
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 361 bytes | 90.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/new-changes' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/git-cafe-exercise/pull/new/ft/new-changes
+remote:
+To https://github.com/isaacbenit/git-cafe-exercise.git
+ * [new branch]      ft/new-changes -> ft/new-changes
+branch 'ft/new-changes' set up to track 'origin/ft/new-changes'.
+```
+Bundle 6 exercise 2
