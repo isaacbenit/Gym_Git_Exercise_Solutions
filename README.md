@@ -1537,3 +1537,152 @@ remote:
 To https://github.com/isaacbenit/git-exercises.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+
+```
+Bundle 4 exercise 1
+```
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git remote add git-copy https://github.com/isaacbenit/git-copy.git
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git commit -m 'new changes for bundle 4'
+[main 4439512] new changes for bundle 4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git push git-copy
+Enumerating objects: 84, done.
+Counting objects: 100% (84/84), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (79/79), done.
+Writing objects: 100% (84/84), 131.06 KiB | 1.38 MiB/s, done.
+Total 84 (delta 31), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (31/31), done.
+To https://github.com/isaacbenit/git-copy.git
+ * [new branch]      main -> main
+
+HP-@isaacb24 MINGW64 
+
+```
+Bundle 4 exercise 2
+```
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git checkout ft/footer
+error: pathspec 'ft/footer' did not match any file(s) known to git
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git branch ft/footer
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git checkout ft/footer
+Switched to branch 'ft/footer'
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/footer)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/footer)
+$ git commit -m 'the changes on the about page'
+[ft/footer b968e26] the changes on the about page
+ 1 file changed, 1 insertion(+)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/footer)
+$ git push --set-upstream origin ft/footer
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 2.41 KiB | 274.00 KiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/Gym_Git_Exercise_Solutions/pull/new/ft/footer
+remote:
+To https://github.com/isaacbenit/git-exercises.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/footer)
+$ git chechout main
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/footer)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git branch ft/squashing
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (main)
+$ git switch ft/squashing
+Switched to branch 'ft/squashing'
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/squashing)
+$ git merge --squash ft/footer
+Updating 4439512..b968e26
+Fast-forward
+Squash commit -- not updating HEAD
+ about.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/squashing)
+$ git commit -m 'footer changes squashing'
+[ft/squashing f5a9255] footer changes squashing
+ 1 file changed, 1 insertion(+)
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/squashing)
+$ git push 
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/squashing)
+$ git push --set-upstream origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 365 bytes | 121.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/isaacbenit/Gym_Git_Exercise_Solutions.git
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/Gym_Git_Exercise_Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/isaacbenit/git-exercises.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+HP-@isaacb24 MINGW64 ~/codes/javascript-practice-exercises/git exercises (ft/squashing)
+$
+```
+Bundle 5 exercise 1
+```
