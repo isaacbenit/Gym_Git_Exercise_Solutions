@@ -1756,3 +1756,59 @@ To https://github.com/isaacbenit/git-cafe-exercise.git
 branch 'ft/new-changes' set up to track 'origin/ft/new-changes'.
 ```
 Bundle 6 exercise 2
+```
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (ft/new-changes)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (main)
+$ git branch bugfix/changes 
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (main)
+$ git switch bugfix/changes
+Switched to branch 'bugfix/changes'
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (bugfix/changes)
+$ git add .
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (bugfix/changes)
+$ git commit -m ' the changes on the index4 page'
+[bugfix/changes 04e50ab]  the changes on the index4 page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (bugfix/changes)
+$ git push 
+fatal: The current branch bugfix/changes has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bugfix/changes
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP-@isaacb24 MINGW64 ~/codes/git forks/git-cafe-exercise (bugfix/changes)
+$ git push --set-upstream origin bugfix/changes
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 324 bytes | 162.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bugfix/changes' on GitHub by visiting:
+remote:      https://github.com/isaacbenit/git-cafe-exercise/pull/new/bugfix/changes
+remote:
+To https://github.com/isaacbenit/git-cafe-exercise.git
+ * [new branch]      bugfix/changes -> bugfix/changes
+branch 'bugfix/changes' set up to track 'origin/bugfix/changes'.
+```
+Bundle 6 exercise 3
+```
+the changes were only done on the file 
+```
+Bundle 6 exercise 4
+```
+
